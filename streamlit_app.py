@@ -6,8 +6,10 @@ import numpy as np
 import time
 from datetime import datetime, timedelta
 
-# Configurazione iniziale e debug info
-st.set_page_config(page_title="TradePrecision", layout="wide")
+# Nota: la configurazione della pagina (st.set_page_config) è stata spostata nel modulo TradePrecision.app
+# per evitare il conflitto con chiamate multiple
+
+# Messaggio di inizializzazione
 st.write("Inizializzazione dell'applicazione...")
 
 # Gestione dei percorsi per compatibilità tra ambiente locale e Streamlit Cloud
