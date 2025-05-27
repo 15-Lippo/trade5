@@ -24,7 +24,7 @@ try:
     import advanced_trading_algorithms
     
     # Esegui il codice principale dell'app
-    exec(open(os.path.join(TRADEPRECISION_DIR, "app.py")).read())
+    exec(open(os.path.join(TRADEPRECISION_DIR, "app.py"), encoding='utf-8').read())
 except ImportError as e:
     st.error(f"Errore di importazione: {e}")
     st.write("Directory contenuto:")
