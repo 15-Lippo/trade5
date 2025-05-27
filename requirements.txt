@@ -5,6 +5,10 @@ ccxt>=4.0.0
 plotly>=5.14.0
 scikit-learn>=1.2.0
 matplotlib>=3.7.0
-tensorflow>=2.13.0
-prophet>=1.1.4
-pystan>=3.7.0
+# Rimozione di tensorflow per evitare problemi di compatibilità
+# tensorflow>=2.13.0
+# Utilizzo di TensorFlow CPU solo se disponibile
+tensorflow-cpu>=2.12.0; python_version < '3.12'
+# Versioni compatibili per prophet e pystan
+prophet>=1.1.3
+pystan>=3.6.0
